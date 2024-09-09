@@ -14,6 +14,12 @@
 		37FEFE452C8F45C700FCCCBF /* Azimuth7_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE442C8F45C700FCCCBF /* Azimuth7_0Tests.swift */; };
 		37FEFE4F2C8F45C700FCCCBF /* Azimuth7_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE4E2C8F45C700FCCCBF /* Azimuth7_0UITests.swift */; };
 		37FEFE512C8F45C700FCCCBF /* Azimuth7_0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE502C8F45C700FCCCBF /* Azimuth7_0UITestsLaunchTests.swift */; };
+		37FEFE622C8F558400FCCCBF /* Objective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE612C8F558400FCCCBF /* Objective.swift */; };
+		37FEFE652C8F564A00FCCCBF /* IntroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE642C8F564A00FCCCBF /* IntroScreen.swift */; };
+		37FEFE672C8F5BAC00FCCCBF /* TintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE662C8F5BAC00FCCCBF /* TintColor.swift */; };
+		37FEFE692C8F5BCF00FCCCBF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE682C8F5BCF00FCCCBF /* Constants.swift */; };
+		37FEFE6B2C8F5C0800FCCCBF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE6A2C8F5C0800FCCCBF /* Category.swift */; };
+		37FEFE6D2C8F5F5300FCCCBF /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE6C2C8F5F5300FCCCBF /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		37FEFE4A2C8F45C700FCCCBF /* Azimuth7.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Azimuth7.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37FEFE4E2C8F45C700FCCCBF /* Azimuth7_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Azimuth7_0UITests.swift; sourceTree = "<group>"; };
 		37FEFE502C8F45C700FCCCBF /* Azimuth7_0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Azimuth7_0UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		37FEFE612C8F558400FCCCBF /* Objective.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objective.swift; sourceTree = "<group>"; };
+		37FEFE642C8F564A00FCCCBF /* IntroScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScreen.swift; sourceTree = "<group>"; };
+		37FEFE662C8F5BAC00FCCCBF /* TintColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintColor.swift; sourceTree = "<group>"; };
+		37FEFE682C8F5BCF00FCCCBF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		37FEFE6A2C8F5C0800FCCCBF /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		37FEFE6C2C8F5F5300FCCCBF /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,7 @@
 		37FEFE262C8F45C600FCCCBF = {
 			isa = PBXGroup;
 			children = (
+				37FEFE322C8F45C600FCCCBF /* Azimuth7_0App.swift */,
 				37FEFE312C8F45C600FCCCBF /* Azimuth7.0 */,
 				37FEFE432C8F45C700FCCCBF /* Azimuth7.0Tests */,
 				37FEFE4D2C8F45C700FCCCBF /* Azimuth7.0UITests */,
@@ -95,8 +108,11 @@
 		37FEFE312C8F45C600FCCCBF /* Azimuth7.0 */ = {
 			isa = PBXGroup;
 			children = (
-				37FEFE322C8F45C600FCCCBF /* Azimuth7_0App.swift */,
-				37FEFE342C8F45C600FCCCBF /* ContentView.swift */,
+				37FEFE602C8F463000FCCCBF /* Managers */,
+				37FEFE5F2C8F462700FCCCBF /* Support */,
+				37FEFE5E2C8F461C00FCCCBF /* Models */,
+				37FEFE632C8F562800FCCCBF /* Screens */,
+				37FEFE5D2C8F460800FCCCBF /* Views */,
 				37FEFE362C8F45C700FCCCBF /* Assets.xcassets */,
 				37FEFE382C8F45C700FCCCBF /* Azimuth7_0.entitlements */,
 				37FEFE392C8F45C700FCCCBF /* Preview Content */,
@@ -127,6 +143,48 @@
 				37FEFE502C8F45C700FCCCBF /* Azimuth7_0UITestsLaunchTests.swift */,
 			);
 			path = Azimuth7.0UITests;
+			sourceTree = "<group>";
+		};
+		37FEFE5D2C8F460800FCCCBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				37FEFE342C8F45C600FCCCBF /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		37FEFE5E2C8F461C00FCCCBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				37FEFE612C8F558400FCCCBF /* Objective.swift */,
+				37FEFE662C8F5BAC00FCCCBF /* TintColor.swift */,
+				37FEFE6A2C8F5C0800FCCCBF /* Category.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		37FEFE5F2C8F462700FCCCBF /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				37FEFE682C8F5BCF00FCCCBF /* Constants.swift */,
+				37FEFE6C2C8F5F5300FCCCBF /* ViewExtension.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		37FEFE602C8F463000FCCCBF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		37FEFE632C8F562800FCCCBF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				37FEFE642C8F564A00FCCCBF /* IntroScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37FEFE652C8F564A00FCCCBF /* IntroScreen.swift in Sources */,
+				37FEFE622C8F558400FCCCBF /* Objective.swift in Sources */,
 				37FEFE352C8F45C600FCCCBF /* ContentView.swift in Sources */,
+				37FEFE672C8F5BAC00FCCCBF /* TintColor.swift in Sources */,
 				37FEFE332C8F45C600FCCCBF /* Azimuth7_0App.swift in Sources */,
+				37FEFE692C8F5BCF00FCCCBF /* Constants.swift in Sources */,
+				37FEFE6D2C8F5F5300FCCCBF /* ViewExtension.swift in Sources */,
+				37FEFE6B2C8F5C0800FCCCBF /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
