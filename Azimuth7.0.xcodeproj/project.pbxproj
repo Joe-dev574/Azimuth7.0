@@ -20,6 +20,10 @@
 		37FEFE692C8F5BCF00FCCCBF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE682C8F5BCF00FCCCBF /* Constants.swift */; };
 		37FEFE6B2C8F5C0800FCCCBF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE6A2C8F5C0800FCCCBF /* Category.swift */; };
 		37FEFE6D2C8F5F5300FCCCBF /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE6C2C8F5F5300FCCCBF /* ViewExtension.swift */; };
+		37FEFE702C910C8F00FCCCBF /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE6F2C910C8F00FCCCBF /* TabShape.swift */; };
+		37FEFE722C910CAE00FCCCBF /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE712C910CAE00FCCCBF /* TabPosition.swift */; };
+		37FEFE742C910CD100FCCCBF /* TabBarHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE732C910CD100FCCCBF /* TabBarHome.swift */; };
+		37FEFE762C910DA800FCCCBF /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE752C910DA800FCCCBF /* TabModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		37FEFE682C8F5BCF00FCCCBF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		37FEFE6A2C8F5C0800FCCCBF /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		37FEFE6C2C8F5F5300FCCCBF /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		37FEFE6F2C910C8F00FCCCBF /* TabShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabShape.swift; sourceTree = "<group>"; };
+		37FEFE712C910CAE00FCCCBF /* TabPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
+		37FEFE732C910CD100FCCCBF /* TabBarHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHome.swift; sourceTree = "<group>"; };
+		37FEFE752C910DA800FCCCBF /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 		37FEFE312C8F45C600FCCCBF /* Azimuth7.0 */ = {
 			isa = PBXGroup;
 			children = (
+				37FEFE6E2C910C7600FCCCBF /* TabBarPackage */,
 				37FEFE602C8F463000FCCCBF /* Managers */,
 				37FEFE5F2C8F462700FCCCBF /* Support */,
 				37FEFE5E2C8F461C00FCCCBF /* Models */,
@@ -185,6 +194,17 @@
 				37FEFE642C8F564A00FCCCBF /* IntroScreen.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		37FEFE6E2C910C7600FCCCBF /* TabBarPackage */ = {
+			isa = PBXGroup;
+			children = (
+				37FEFE6F2C910C8F00FCCCBF /* TabShape.swift */,
+				37FEFE712C910CAE00FCCCBF /* TabPosition.swift */,
+				37FEFE732C910CD100FCCCBF /* TabBarHome.swift */,
+				37FEFE752C910DA800FCCCBF /* TabModel.swift */,
+			);
+			path = TabBarPackage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,10 +339,14 @@
 			files = (
 				37FEFE652C8F564A00FCCCBF /* IntroScreen.swift in Sources */,
 				37FEFE622C8F558400FCCCBF /* Objective.swift in Sources */,
+				37FEFE742C910CD100FCCCBF /* TabBarHome.swift in Sources */,
 				37FEFE352C8F45C600FCCCBF /* ContentView.swift in Sources */,
+				37FEFE702C910C8F00FCCCBF /* TabShape.swift in Sources */,
+				37FEFE722C910CAE00FCCCBF /* TabPosition.swift in Sources */,
 				37FEFE672C8F5BAC00FCCCBF /* TintColor.swift in Sources */,
 				37FEFE332C8F45C600FCCCBF /* Azimuth7_0App.swift in Sources */,
 				37FEFE692C8F5BCF00FCCCBF /* Constants.swift in Sources */,
+				37FEFE762C910DA800FCCCBF /* TabModel.swift in Sources */,
 				37FEFE6D2C8F5F5300FCCCBF /* ViewExtension.swift in Sources */,
 				37FEFE6B2C8F5C0800FCCCBF /* Category.swift in Sources */,
 			);
