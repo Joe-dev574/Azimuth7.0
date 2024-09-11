@@ -14,13 +14,15 @@ struct TintColor: Identifiable {
     var value: Color
 }
 
-var tints: [TintColor] = [
-    .init(color: "Red", value: .red),
-    .init(color: "Blue", value: .blue),
-    .init(color: "Pink", value: .pink),
-    .init(color: "Purple", value: .purple),
-    .init(color: "Orange", value: .orange),
-    .init(color: "Cyan", value: .cyan),
-    .init(color: "Indigo", value: .indigo),
-]
+var tints: [TintColor]=[
+    .init(color: "TaskColor1", value: .taskColor1),
+    .init(color: "TaskColor2", value: .taskColor2),
+    .init(color: "TaskColor3", value: .taskColor3),
+    .init(color: "TaskColor4", value: .taskColor4),
+    .init(color: "TaskColor5", value: .taskColor5),
+    .init(color: "TaskColor6", value: .taskColor6),
+    .init(color: "TaskColor7", value: .taskColor7),
+    .init(color: "TaskColor8", value: .taskColor8),
+    .init(color: "TaskColor9", value: .taskColor9),
+    ]
 

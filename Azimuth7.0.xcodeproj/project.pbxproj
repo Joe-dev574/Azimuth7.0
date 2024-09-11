@@ -24,6 +24,16 @@
 		37FEFE722C910CAE00FCCCBF /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE712C910CAE00FCCCBF /* TabPosition.swift */; };
 		37FEFE742C910CD100FCCCBF /* TabBarHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE732C910CD100FCCCBF /* TabBarHome.swift */; };
 		37FEFE762C910DA800FCCCBF /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE752C910DA800FCCCBF /* TabModel.swift */; };
+		37FEFE782C911C3000FCCCBF /* GrindScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE772C911C3000FCCCBF /* GrindScreen.swift */; };
+		37FEFE7A2C911C4C00FCCCBF /* ObjectivesListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE792C911C4C00FCCCBF /* ObjectivesListScreen.swift */; };
+		37FEFE7C2C911C5B00FCCCBF /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE7B2C911C5B00FCCCBF /* SearchScreen.swift */; };
+		37FEFE7E2C911C8500FCCCBF /* NotesListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE7D2C911C8500FCCCBF /* NotesListScreen.swift */; };
+		37FEFE822C912ED700FCCCBF /* ObjectiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE812C912ED700FCCCBF /* ObjectiveView.swift */; };
+		37FEFE842C9135CA00FCCCBF /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE832C9135CA00FCCCBF /* DateExtension.swift */; };
+		37FEFE862C913BD400FCCCBF /* ObjectiveCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE852C913BD400FCCCBF /* ObjectiveCardView.swift */; };
+		37FEFE882C913C4200FCCCBF /* FilterObjectivesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE872C913C4200FCCCBF /* FilterObjectivesView.swift */; };
+		37FEFE8A2C91474800FCCCBF /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE892C91474800FCCCBF /* HapticManager.swift */; };
+		37FEFE8C2C914B6500FCCCBF /* DateFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FEFE8B2C914B6500FCCCBF /* DateFilterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +75,16 @@
 		37FEFE712C910CAE00FCCCBF /* TabPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
 		37FEFE732C910CD100FCCCBF /* TabBarHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHome.swift; sourceTree = "<group>"; };
 		37FEFE752C910DA800FCCCBF /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
+		37FEFE772C911C3000FCCCBF /* GrindScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrindScreen.swift; sourceTree = "<group>"; };
+		37FEFE792C911C4C00FCCCBF /* ObjectivesListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectivesListScreen.swift; sourceTree = "<group>"; };
+		37FEFE7B2C911C5B00FCCCBF /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
+		37FEFE7D2C911C8500FCCCBF /* NotesListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListScreen.swift; sourceTree = "<group>"; };
+		37FEFE812C912ED700FCCCBF /* ObjectiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveView.swift; sourceTree = "<group>"; };
+		37FEFE832C9135CA00FCCCBF /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		37FEFE852C913BD400FCCCBF /* ObjectiveCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveCardView.swift; sourceTree = "<group>"; };
+		37FEFE872C913C4200FCCCBF /* FilterObjectivesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterObjectivesView.swift; sourceTree = "<group>"; };
+		37FEFE892C91474800FCCCBF /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		37FEFE8B2C914B6500FCCCBF /* DateFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +177,11 @@
 		37FEFE5D2C8F460800FCCCBF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				37FEFE872C913C4200FCCCBF /* FilterObjectivesView.swift */,
 				37FEFE342C8F45C600FCCCBF /* ContentView.swift */,
+				37FEFE812C912ED700FCCCBF /* ObjectiveView.swift */,
+				37FEFE852C913BD400FCCCBF /* ObjectiveCardView.swift */,
+				37FEFE8B2C914B6500FCCCBF /* DateFilterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +201,7 @@
 			children = (
 				37FEFE682C8F5BCF00FCCCBF /* Constants.swift */,
 				37FEFE6C2C8F5F5300FCCCBF /* ViewExtension.swift */,
+				37FEFE832C9135CA00FCCCBF /* DateExtension.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -184,6 +209,7 @@
 		37FEFE602C8F463000FCCCBF /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				37FEFE892C91474800FCCCBF /* HapticManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -191,7 +217,8 @@
 		37FEFE632C8F562800FCCCBF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				37FEFE642C8F564A00FCCCBF /* IntroScreen.swift */,
+				37FEFE7F2C911D1700FCCCBF /* Intro Screens */,
+				37FEFE802C911D4500FCCCBF /* Tab Screens */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -205,6 +232,25 @@
 				37FEFE752C910DA800FCCCBF /* TabModel.swift */,
 			);
 			path = TabBarPackage;
+			sourceTree = "<group>";
+		};
+		37FEFE7F2C911D1700FCCCBF /* Intro Screens */ = {
+			isa = PBXGroup;
+			children = (
+				37FEFE642C8F564A00FCCCBF /* IntroScreen.swift */,
+			);
+			path = "Intro Screens";
+			sourceTree = "<group>";
+		};
+		37FEFE802C911D4500FCCCBF /* Tab Screens */ = {
+			isa = PBXGroup;
+			children = (
+				37FEFE7D2C911C8500FCCCBF /* NotesListScreen.swift */,
+				37FEFE7B2C911C5B00FCCCBF /* SearchScreen.swift */,
+				37FEFE792C911C4C00FCCCBF /* ObjectivesListScreen.swift */,
+				37FEFE772C911C3000FCCCBF /* GrindScreen.swift */,
+			);
+			path = "Tab Screens";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,16 +384,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				37FEFE652C8F564A00FCCCBF /* IntroScreen.swift in Sources */,
+				37FEFE822C912ED700FCCCBF /* ObjectiveView.swift in Sources */,
 				37FEFE622C8F558400FCCCBF /* Objective.swift in Sources */,
 				37FEFE742C910CD100FCCCBF /* TabBarHome.swift in Sources */,
+				37FEFE7A2C911C4C00FCCCBF /* ObjectivesListScreen.swift in Sources */,
 				37FEFE352C8F45C600FCCCBF /* ContentView.swift in Sources */,
+				37FEFE7E2C911C8500FCCCBF /* NotesListScreen.swift in Sources */,
 				37FEFE702C910C8F00FCCCBF /* TabShape.swift in Sources */,
+				37FEFE862C913BD400FCCCBF /* ObjectiveCardView.swift in Sources */,
 				37FEFE722C910CAE00FCCCBF /* TabPosition.swift in Sources */,
 				37FEFE672C8F5BAC00FCCCBF /* TintColor.swift in Sources */,
 				37FEFE332C8F45C600FCCCBF /* Azimuth7_0App.swift in Sources */,
+				37FEFE882C913C4200FCCCBF /* FilterObjectivesView.swift in Sources */,
+				37FEFE782C911C3000FCCCBF /* GrindScreen.swift in Sources */,
 				37FEFE692C8F5BCF00FCCCBF /* Constants.swift in Sources */,
+				37FEFE842C9135CA00FCCCBF /* DateExtension.swift in Sources */,
+				37FEFE8A2C91474800FCCCBF /* HapticManager.swift in Sources */,
+				37FEFE7C2C911C5B00FCCCBF /* SearchScreen.swift in Sources */,
 				37FEFE762C910DA800FCCCBF /* TabModel.swift in Sources */,
 				37FEFE6D2C8F5F5300FCCCBF /* ViewExtension.swift in Sources */,
+				37FEFE8C2C914B6500FCCCBF /* DateFilterView.swift in Sources */,
 				37FEFE6B2C8F5C0800FCCCBF /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

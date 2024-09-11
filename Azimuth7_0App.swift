@@ -13,5 +13,6 @@ struct Azimuth7_0App: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: [Objective.self])
     }
 }

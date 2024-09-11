@@ -10,8 +10,8 @@ import SwiftUI
 /// App Tab's
 enum Tab: String, CaseIterable {
     case grind = "Grind"
-    case projects = "Projects"
     case objectives = "Objectives"
+    case search = "Search"
     case notes = "Notes"
   
     
@@ -20,10 +20,10 @@ enum Tab: String, CaseIterable {
         switch self {
         case .grind:
             return "mug.fill"
-        case .projects:
-            return "location.north.circle"
         case .objectives:
-            return "checkmark.circle"
+            return "location.north.circle"
+        case .search:
+            return "magnifyingglass.circle"
         case .notes:
             return "square.and.pencil.circle"
        

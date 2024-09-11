@@ -21,45 +21,31 @@ struct TabBarHome: View {
     var body: some View {
         VStack(spacing: 0 ) {
             TabView(selection: $activeTab) {
-              Text( "GrindView()")
+                    GrindScreen( )
                     .tag(Tab.grind)
-                    /// Hiding Native Tab Bar
-                    /// Bug on iOS 16.4
-                    // .toolbar(.hidden, for: .tabBar)
-                
-                   Text("ProjectsListScreen()")
-                    .tag(Tab.projects)
-                    /// Hiding Native Tab Bar
-                    /// Bug on iOS 16.4
-                    // .toolbar(.hidden, for: .tabBar)
-                
-               Text("ObjectivesListScreen()")
+                 
+                    ObjectivesListScreen( )
                     .tag(Tab.objectives)
-                    /// Hiding Native Tab Bar
-                    /// Bug on iOS 16.4
-                    // .toolbar(.hidden, for: .tabBar)
-                Text("NotesListScreen()")
-                       .tag(Tab.notes)
-                       /// Hiding Native Tab Bar
-                       /// Bug on iOS 16.4
-                       // .toolbar(.hidden, for: .tabBar)
-               
+                  
+                    SearchScreen( )
+                    .tag(Tab.search)
+                    
+                    NotesListScreen( )
+                    .tag(Tab.notes)
             }
-            
             CustomTabBar()
-              
         }
     }
     
     /// Custom Tab Bar
     /// With More Easy Customization
     @ViewBuilder
-    func CustomTabBar(_ tint: Color = .launchAccent, _ inactiveTint: Color = .secondaryText) -> some View {
+    func CustomTabBar(_ tint: Color = .orange, _ inactiveTint: Color = .secondaryText) -> some View {
         /// Moving all the Remaining Tab Item's to Bottom
         HStack(alignment: .bottom, spacing: 0) {
             ForEach(Tab.allCases, id: \.rawValue) {
                 TabItem(
-                    tint: tint,
+                    tint: appTint,
                     inactiveTint: inactiveTint,
                     tab: $0,
                     animation: animation,
@@ -77,7 +63,6 @@ struct TabBarHome: View {
                 /// For Shape Smoothening
                 .shadow(color: tint.opacity(0.1), radius: 5, x: 0, y: -5)
                 .blur(radius: 2)
-             //   .padding(.top, 25)
         })
         .padding(.horizontal)
         /// Adding Animation
@@ -106,7 +91,7 @@ struct TabItem: View {
                 .background {
                     if activeTab == tab {
                         RoundedRectangle(cornerRadius: 10.0)
-                            .fill(tint.gradient)
+                            .fill(appTint.gradient)
                             .matchedGeometryEffect(id: "ACTIVETAB", in: animation)
                             .frame(width: 50, height: 35)
                     }
@@ -114,7 +99,7 @@ struct TabItem: View {
             
             Text(tab.rawValue)
                 .font(.caption)
-                .foregroundStyle(activeTab == tab ? tint : .secondaryText)
+                .foregroundStyle(activeTab == tab ? appTint : .secondaryText)
         }
         .frame(maxWidth: .infinity)
         .contentShape(Rectangle())
